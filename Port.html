@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Paween Bunon - Junior Game Developer</title>
+<meta name="description" content="Portfolio of Paween Bunon (Book), Junior Game Developer specializing in Unity, C#, and mobile game development." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./Port.css" />
+</head>
+<body>
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#hero" class="logo">Paween<span>.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">Menu</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#project">Project</a></li>
+      <li><a href="#process">Process</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="shape s1"></div>
+  <div class="shape s2"></div>
+  <div class="shape s3"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="eyebrow"><span class="dot"></span> Available for opportunities</div>
+      <h1>Paween <span class="accent">Bunon</span></h1>
+      <div class="hero-title">Junior Game Developer</div>
+      <p class="hero-sub">Unity | C# | Game Development</p>
+      <div class="cta-group">
+        <a href="https://drive.google.com/file/d/1YsXYaSTbFioNAvnqgfScPV3oQ0jztkhX/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Download Resume</a>
+        <a href="#project" class="btn btn-secondary">View Project</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section-alt">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-label">About</span>
+      <h2>Building games, learning every day.</h2>
+    </div>
+    <div class="about-grid">
+      <div class="reveal">
+        <p class="about-bio">
+          Computer Engineering graduate from Khon Kaen University (2021-2025) with experience
+          building a 2.5D mobile game using Unity and C#. Passionate about gameplay programming
+          and creating enjoyable player experiences.
+        </p>
+      </div>
+      <div class="skills-block reveal">
+        <div class="skills-cat">
+          <div class="skills-cat-title">Game Development</div>
+          <div class="pills">
+            <span class="pill">Unity</span>
+            <span class="pill">C#</span>
+            <span class="pill">PC Development</span>
+            <span class="pill">Mobile Development</span>
+          </div>
+        </div>
+        <div class="skills-cat">
+          <div class="skills-cat-title">Tools</div>
+          <div class="pills">
+            <span class="pill">Git / GitHub</span>
+            <span class="pill">Figma</span>
+            <span class="pill">Postman</span>
+          </div>
+        </div>
+        <div class="skills-cat">
+          <div class="skills-cat-title">Other</div>
+          <div class="pills">
+            <span class="pill">JavaScript</span>
+            <span class="pill">React.js</span>
+            <span class="pill">Python</span>
+            <span class="pill">HTML/CSS</span>
+            <span class="pill">SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-label">Featured Project</span>
+      <h2>AI Vocabulary Learning Game</h2>
+      <p class="section-intro">A 2.5D mobile educational game blending real-world AI detection with vocabulary challenges.</p>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-grid">
+        <div class="project-info">
+          <div class="project-title">AI Vocabulary Learning Game</div>
+          <div class="tech-badges">
+            <span class="tech-badge">Unity</span>
+            <span class="tech-badge">C#</span>
+            <span class="tech-badge">AI Object Detection API</span>
+            <span class="tech-badge">Android</span>
+          </div>
+          <p class="project-desc">
+            A 2.5D educational mobile game for elementary-level learners to improve English vocabulary.
+            Players use their device camera to detect real-world objects, which trigger in-game
+            vocabulary challenges.
+          </p>
+          <ul class="feature-list">
+            <li><span class="ico">Game</span><span>2.5D gameplay with an interactive challenge system</span></li>
+            <li><span class="ico">AI</span><span>Real-time object detection via the camera</span></li>
+            <li><span class="ico">UI</span><span>Child-friendly UI/UX designed for mobile screens</span></li>
+            <li><span class="ico">Code</span><span>Built with OOP architecture in C#</span></li>
+            <li><span class="ico">Test</span><span>Tested and deployed on Android devices</span></li>
+          </ul>
+          <a href="https://drive.google.com/drive/folders/1nAFhvvqbHMzfF861Wt10KLCNI0TqIMjr?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener">Try the Game / Download APK</a>
+        </div>
+        <div class="project-visual">
+          <div class="screenshot-carousel" aria-label="Game screenshots"
+            data-screenshots="
+              ./screenshots/game-1.jpg,
+              ./screenshots/game-2.jpg,
+              ./screenshots/game-3.jpg,
+              ./screenshots/game-4.jpg,
+              ./screenshots/game-5.jpg,
+              ./screenshots/game-6.jpg,
+              ./screenshots/game-7.jpg,
+              ./screenshots/game-8.jpg,
+              ./screenshots/game-9.jpg,
+              ./screenshots/game-10.jpg
+            ">
+            <div class="carousel-frame">
+              <button type="button" class="carousel-btn carousel-btn-prev" id="shotPrev" aria-label="Previous screenshot">&lsaquo;</button>
+              <img id="shotImage" src="./screenshots/game-1.jpg" alt="Game screenshot 1" loading="lazy" tabindex="0" role="button" aria-label="Open screenshot in fullscreen">
+              <div class="carousel-counter" id="shotCounter">1 / 10</div>
+              <button type="button" class="carousel-btn carousel-btn-next" id="shotNext" aria-label="Next screenshot">&rsaquo;</button>
+            </div>
+          </div>
+          <div class="carousel-dots" id="shotDots" aria-label="Screenshot navigation"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process" class="section-alt">
+  <div class="container">
+    <div class="section-heading reveal">
+      <span class="section-label">Role &amp; Process</span>
+      <h2>How I built it.</h2>
+    </div>
+    <div class="two-col">
+      <div class="info-card reveal">
+        <h3>What I Did</h3>
+        <ul class="role-list">
+          <li>
+            <span class="ico">GP</span>
+            <span>
+              <strong>Gameplay Programming</strong><br>
+              <span class="role-desc">C# scripts and core game logic</span>
+            </span>
+          </li>
+          <li>
+            <span class="ico">UX</span>
+            <span>
+              <strong>UI/UX Design &amp; Implementation</strong><br>
+              <span class="role-desc">Designed and built mobile-friendly interfaces</span>
+            </span>
+          </li>
+          <li>
+            <span class="ico">API</span>
+            <span>
+              <strong>AI API Integration</strong><br>
+              <span class="role-desc">Connected object detection API with Unity</span>
+            </span>
+          </li>
+          <li>
+            <span class="ico">AD</span>
+            <span>
+              <strong>Android Build &amp; Testing</strong><br>
+              <span class="role-desc">Deployed and tested on real devices</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <div class="info-card reveal">
+        <h3>Challenge I Solved</h3>
+        <div class="ps-block ps-problem">
+          <span class="ps-label">Problem</span>
+          <p class="ps-text">AI detection caused frame drops during gameplay, disrupting the player's experience.</p>
+        </div>
+        <div class="arrow">↓</div>
+        <div class="ps-block ps-solution">
+          <span class="ps-label">Solution</span>
+          <p class="ps-text">Optimized API call frequency and added async loading feedback to maintain smooth player experience.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="reveal">
+      <span class="section-label">Contact</span>
+      <h2>Let's Build Something Together</h2>
+      <p class="contact-sub">Always happy to chat about games, code, or new opportunities.</p>
+      <div class="contact-links">
+        <a href="mailto:book992x@gmail.com" class="contact-link"><span class="ico">Email</span>book992x@gmail.com</a>
+        <a href="tel:+66613509546" class="contact-link"><span class="ico">Phone</span>061-350-9546</a>
+        <a href="https://github.com/Book232546" target="_blank" rel="noopener" class="contact-link"><span class="ico">GitHub</span>github.com/Book232546</a>
+        <span class="contact-link"><span class="ico">Location</span>Rayong, Thailand</span>
+      </div>
+      <div class="contact-note"><span class="dot"></span> Currently open to Junior Game Developer opportunities</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">(c) 2025 Paween Bunon | Built with care in Rayong, Thailand</div>
+</footer>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <div class="lightbox-backdrop" data-lightbox-close></div>
+  <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-label="Fullscreen screenshot viewer">
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close fullscreen view">X</button>
+    <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous screenshot">&lsaquo;</button>
+    <img id="lightboxImage" src="./screenshots/game-1.jpg" alt="Game screenshot 1">
+    <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next screenshot">&rsaquo;</button>
+    <div class="lightbox-caption" id="lightboxCaption">1 / 10</div>
+  </div>
+</div>
+
+<script src="./Port.js" defer></script>
+</body>
+</html>
